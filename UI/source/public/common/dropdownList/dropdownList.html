@@ -1,0 +1,25 @@
+<label style="width:80px; padding: 6px; margin-top: 10px">{{ vm.filterobj.filterLabel }}</label>
+<!-- <div uib-dropdown style="cursor: pointer; width:200px">
+    <div uib-dropdown-toggle style="min-width: 50px; display: inline-block">
+        <div style="min-width: 160px; display: inline-block">
+            {{vm.personSelected}}
+        </div>
+        <span class="caretSmall caret"></span>
+    </div>
+    <ul class="smallSizeDropDown" uib-dropdown-menu role="menu" aria-labelledby="trail-menu">
+        <li role="menuitem" ng-repeat="item in vm.people">
+            <a href="javascript:void(0);" ng-click="vm.changePerson(item)">{{item.name}}</a>
+        </li>
+    </ul>
+</div> -->
+
+<div class="dropdown" style="display: inline-block">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="min-width: 160px; text-align:left">{{ vm.filterobj.filterSelected }}
+      <span class="caret" style="float: right; margin-top: 8px"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li ng-repeat="item in vm.filterlist">
+            <a href="" ng-click="vm.onupdatefilter(item)">{{item.name}}</a>
+        </li>
+    </ul>
+</div>

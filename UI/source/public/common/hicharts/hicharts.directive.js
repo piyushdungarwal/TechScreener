@@ -1,16 +1,16 @@
-import Highcharts from 'highcharts/highstock.src';
-require('highcharts/modules/treemap.src')(Highcharts);
-require('highcharts/modules/no-data-to-display.src')(Highcharts);
-require('highcharts/highcharts-more.src')(Highcharts);
+import Highcharts from 'highstock-release/highstock.src';
+require('highstock-release/modules/treemap.src')(Highcharts);
+require('highstock-release/modules/no-data-to-display.src')(Highcharts);
+require('highstock-release/highcharts-more.src')(Highcharts);
 
 const hichartsDirective = ($timeout) => {
     "ngInject";
-
+    
     const directive = {
         restrict: 'E',
         template: '<div></div>',
         scope: {
-            options: '='
+            chartoptions: '='
         },
         link: (scope, element) => {
             //destroy charts to prevent memory leaks
@@ -24,8 +24,10 @@ const hichartsDirective = ($timeout) => {
                     } catch (exp) {}
                 }
             });
-
-            Highcharts.chart(element[0], scope.options);
+            // scope.chartoptions.width = 800;
+            // scope.chartoptions.height = 500;
+            console.log("directive options:", scope.chartoptions);
+            Highcharts.chart(element[0], scope.chartoptions);
 
         }
     };

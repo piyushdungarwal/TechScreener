@@ -1,0 +1,140 @@
+
+    
+    .ui-grid-header-canvas {
+        height: 27px;
+        /*max-height: 27px;*/
+        width: 100%;
+    }
+
+    .ui-grid-header-viewport {
+        width: 100%;
+    }
+
+    .ui-grid-header-cell-wrapper {
+        /*width: 100%;*/
+        position: relative;
+        display: table;
+        box-sizing: border-box;
+        height: initial
+    }
+
+    .ui-grid-top-panel {
+        background: white;
+        color: black;
+    }
+
+    .sign-in-link {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .sign-in-link:hover {
+            color: #ffffff;
+            text-decoration: none;
+    }
+
+    .ui-grid-cell-contents {
+        position: relative;
+        left: 30%
+    }
+
+    .chart-wrapper {
+        width: 99%;
+    }
+
+    .highcharts-container {
+        width: 99% !important;
+    }
+
+    .highcharts-background {
+        width: 99% !important;   
+    }
+
+    .highcharts-plot-background {
+        width: 99% !important;   
+    }
+
+    nav.navbar.navbar-default.main-navbar {
+        background-color: steelblue;
+    }
+
+    .main-tabs>li> a{           
+        color: black !important;
+    }
+    .main-tabs>li{
+            &.active{           
+            color: black !important;
+        }
+    }
+ 
+    ul.nav.navbar-nav.innerCategories>.active>a {
+        background-color: #87dafa;
+    }
+
+    #companyNameId {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: white;
+    }
+
+    .companyProfileDetails {
+        height: 45px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .app-body-company {
+        position: relative;
+        top: 115px;
+        padding: 10px;
+
+        .navbar {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .fixed-navbar {
+        position: fixed;
+        top: 51px;
+        left: 0px;
+    }
+
+    .ui-select-focusser{
+        display: none;
+    }
+    .uiSelectClass {
+        background-color: yellow;
+    }
+
+    .ui-select-toggle {
+        text-align: left;
+    }    
+
+    .company-search-bar{
+        display: inline-block;
+        top:11px;
+        position:relative;
+        left: 5px;        
+    }
+    
+    .caret{
+                display: none;
+        }
+
+
+    .main-navbar-fixed, .fixed-navbar-links  {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 200
+    }
+
+    .fixed-navbar-links {
+        top: 50px;
+
+        .container-fluid {
+            background: #e0e0e0;
+        }
+    }

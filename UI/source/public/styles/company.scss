@@ -1,0 +1,56 @@
+.company-heading {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important
+}
+
+.company-details-parent {
+	position: relative;
+	top: 35px;
+
+	.company-details-child1 {
+		width: 98%;
+		height: 263px;
+		border: 1px solid red;
+		position: relative;
+		top: 0px
+	}
+
+	.company-details-child2{
+		width: 98%;
+		height: 500px;
+		border: 1px solid red;
+	}
+
+	.company-details-child3 {
+		width: 98%;
+		border: 1px solid red;
+
+		.company-pros-cons-container {
+			width: 48%;
+			display: inline-block;
+		}
+
+		.company-pros-cons {
+			height: 50px;
+			background-color: skyblue;
+			text-align: center;
+			padding: 5px;
+		}
+	}
+
+	.company-details-child4 {
+		width: 98%;
+		height: 500px;
+		border: 1px solid red;
+	}
+
+	.company-details-child5 {
+		width: 98%;
+		height: 500px;
+		border: 1px solid red;
+	}
+}
+
+.unstyled-list {
+	list-style: none
+}

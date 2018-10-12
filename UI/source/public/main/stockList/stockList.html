@@ -1,5 +1,35 @@
-You are on stockList page
-<table class="table table-striped">
+
+<!-- <div> -->
+<div class="stocklist-details-container">
+    <div class="stocklist-details-grid-container" ui-grid="vm.gridOptions"></div>
+
+    <div class="stocklist-filters-container">
+        <dropdown-list filterlist="vm.filter1.people" filterobj="vm.filter1" updatefilter="vm.changeFilter(item, filterobj)" >
+        </dropdown-list>
+        <dropdown-list filterlist="vm.filter2.people" filterobj="vm.filter2" updatefilter="vm.changeFilter(item, filterobj)" >
+        </dropdown-list>
+        <dropdown-list filterlist="vm.filter1.people" filterobj="vm.filter1" updatefilter="vm.changeFilter(item, filterobj)" >
+        </dropdown-list>
+        <dropdown-list filterlist="vm.filter2.people" filterobj="vm.filter2" updatefilter="vm.changeFilter(item, filterobj)" >
+        </dropdown-list>
+        <dropdown-list filterlist="vm.filter1.people" filterobj="vm.filter1" updatefilter="vm.changeFilter(item, filterobj)" >
+        </dropdown-list>
+        <dropdown-list filterlist="vm.filter2.people" filterobj="vm.filter2" updatefilter="vm.changeFilter(item, filterobj)" >
+        </dropdown-list>
+        <dropdown-list filterlist="vm.filter1.people" filterobj="vm.filter1" updatefilter="vm.changeFilter(item, filterobj)" >
+        </dropdown-list>
+        <dropdown-list filterlist="vm.filter2.people" filterobj="vm.filter2" updatefilter="vm.changeFilter(item, filterobj)" >
+        </dropdown-list>
+        <br/>
+        <br/>
+        <button class="btn btn-primary" ng-click="vm.updateForm()">Submit</button>
+    </div>
+</div>
+
+    <!-- </div> -->
+
+<!-- </div> -->
+<!-- <table class="table table-striped">
     <thead>
         <tr>
             <th>#</th>
@@ -9,18 +39,21 @@ You are on stockList page
         </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="x in vm.mylist">
+        <tr ng-repeat="x in vm.mylist track by $index">
             <th scope="row">3</th>
-            <td>{{ x.company }}</td>
-            <td>{{ x.city }}</td>
+            <td>{{ x }}</td>
+             <td>{{ x.city }}</td>
             <td>{{ x.price }}</td>
+            <td>
+              <button class="btn btn-primary" ng-click="vm.addToWatchList(x)">Add to watchList</button>
+            </td>
         </tr>
     </tbody>
 </table>
 <br />
 <br />
-<br />
-<button class="btn btn-primary" ng-click="vm.addnewEntry()">Add new</button>
-<div id="addNewDiv" class="col-sm-10">
+<br /> -->
+<!-- <button class="btn btn-primary" ng-click="vm.addToWatchList()">Add to watchList</button> -->
+<!-- <div id="addNewDiv" class="col-sm-10">
 
-</div>
+</div> -->

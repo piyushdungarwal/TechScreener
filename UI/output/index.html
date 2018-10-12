@@ -2,30 +2,55 @@
 
 <head>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="../../../node_modules/angular-ui-grid/ui-grid.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/output//css/main.css">
     <base href="/output/">
+
+    
 </head>
 
 <body>
     <div>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default main-navbar navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header" style="width:50%; float: left">
                     <a class="navbar-brand" href="#">Check Stocks</a>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="home">Home</a></li>
-                    <li><a href="charts">Chart page</a></li>
-                    <li><a href="charts2">Chart2 page</a></li>
+                <ul class="nav navbar-nav main-tabs">
+                    <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+                    <li ui-sref-active="active"><a ui-sref="stockList">Stock CompanyList</a></li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="watchList">WatchList</a>
+                    </li>
+                    
+                    <li ui-sref-active="active"><a ui-sref="profile">Profile</a></li>
                 </ul>
-                <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </form>
+                <div class="company-search-bar">
+                        <!-- <input type="text" class="form-control" placeholder="Search" ng-model="companyNameSearch"> -->
+
+                    <ui-select ng-model="myCompanies.companies.selected" theme="bootstrap" style="width: 400px; float:left" title="Choose a person">
+                        <ui-select-match placeholder="Select a company...">{{$select.selected.formatted_address}}</ui-select-match>
+                        <ui-select-choices repeat="company in companyList track by $index"  refresh="refreshCompanies($select.search)" refresh-delay="0">
+                            <!-- <div ng-if="address.isTag" ng-bind-html="'<small>(new)</small>'"></div> -->
+                            <div style="width:400px; padding: 3px 3px"  ng-class="{'uiSelectClass':hovering}"
+                                ng-mouseenter="hovering=true"
+                                ng-mouseleave="hovering=false">
+                                    {{company.formatted_address}} 
+                                    
+                            </div>
+                        </ui-select-choices>
+                    </ui-select>
+  
+                    <!-- </div>
+                    <div style="display: inline-block; top:11px; position:relative"></div> -->
+                    <button type="submit" class="btn btn-default" ng-click="getCompanyInfo(myCompanies.companies)">Submit</button>
+
+                </div>
+                <a class="sign-in-link" ui-sref="login">Sign In</a>
+                <a class="sign-in-link" ng-click="logout()">Sign Out</a>
             </div>
         </nav>
-
         <!-- Hi there
         <ul>
             <li>
@@ -40,13 +65,11 @@
         </ul> -->
         <ui-view></ui-view>
     </div>
-
-
 </body>
 <!-- <script src="public/vendor/highcharts/highcharts.src.js"></script> -->
 <!-- <script src="public/vendor/highcharts-ng/dist/highcharts-ng.js"></script> -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script src="scripts/main.min.js?t=1503581147378"></script>
+<script src="scripts/main.min.js?t=1539323999208"></script>
 
 </html>

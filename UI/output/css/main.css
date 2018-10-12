@@ -1,0 +1,189 @@
+.mr-20 {
+  margin-right: 20px; }
+
+.ui-grid-header-canvas {
+  height: 27px;
+  /*max-height: 27px;*/
+  width: 100%; }
+
+.ui-grid-header-viewport {
+  width: 100%; }
+
+.ui-grid-header-cell-wrapper {
+  /*width: 100%;*/
+  position: relative;
+  display: table;
+  box-sizing: border-box;
+  height: initial; }
+
+.ui-grid-top-panel {
+  background: white;
+  color: black; }
+
+.sign-in-link {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+  color: #ffffff; }
+
+.sign-in-link:hover {
+  color: #ffffff;
+  text-decoration: none; }
+
+.ui-grid-cell-contents {
+  position: relative;
+  left: 30%; }
+
+.chart-wrapper {
+  width: 99%; }
+
+.highcharts-container {
+  width: 99% !important; }
+
+.highcharts-background {
+  width: 99% !important; }
+
+.highcharts-plot-background {
+  width: 99% !important; }
+
+nav.navbar.navbar-default.main-navbar {
+  background-color: steelblue; }
+
+.main-tabs > li > a {
+  color: black !important; }
+
+.main-tabs > li.active {
+  color: black !important; }
+
+ul.nav.navbar-nav.innerCategories > .active > a {
+  background-color: #87dafa; }
+
+#companyNameId {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white; }
+
+.companyProfileDetails {
+  height: 45px;
+  padding-top: 15px;
+  padding-bottom: 10px; }
+
+.app-body-company {
+  position: relative;
+  top: 115px;
+  padding: 10px; }
+  .app-body-company .navbar {
+    margin-bottom: 0 !important; }
+
+.fixed-navbar {
+  position: fixed;
+  top: 51px;
+  left: 0px; }
+
+.ui-select-focusser {
+  display: none; }
+
+.uiSelectClass {
+  background-color: yellow; }
+
+.ui-select-toggle {
+  text-align: left; }
+
+.company-search-bar {
+  display: inline-block;
+  top: 11px;
+  position: relative;
+  left: 5px; }
+
+.caret {
+  display: none; }
+
+.main-navbar-fixed, .fixed-navbar-links {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200; }
+
+.fixed-navbar-links {
+  top: 50px; }
+  .fixed-navbar-links .container-fluid {
+    background: #e0e0e0; }
+
+.login-parent {
+  position: relative;
+  top: 220px;
+  left: 35%;
+  width: 600px; }
+
+.reset-password-parent {
+  position: relative;
+  top: 220px;
+  left: 35%;
+  width: 600px; }
+
+.register-parent {
+  position: relative;
+  top: 220px;
+  left: 35%;
+  width: 600px; }
+
+.company-heading {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
+.company-details-parent {
+  position: relative;
+  top: 35px; }
+  .company-details-parent .company-details-child1 {
+    width: 98%;
+    height: 263px;
+    border: 1px solid red;
+    position: relative;
+    top: 0px; }
+  .company-details-parent .company-details-child2 {
+    width: 98%;
+    height: 500px;
+    border: 1px solid red; }
+  .company-details-parent .company-details-child3 {
+    width: 98%;
+    border: 1px solid red; }
+    .company-details-parent .company-details-child3 .company-pros-cons-container {
+      width: 48%;
+      display: inline-block; }
+    .company-details-parent .company-details-child3 .company-pros-cons {
+      height: 50px;
+      background-color: skyblue;
+      text-align: center;
+      padding: 5px; }
+  .company-details-parent .company-details-child4 {
+    width: 98%;
+    height: 500px;
+    border: 1px solid red; }
+  .company-details-parent .company-details-child5 {
+    width: 98%;
+    height: 500px;
+    border: 1px solid red; }
+
+.unstyled-list {
+  list-style: none; }
+
+.stocklist-details-container {
+  position: relative;
+  top: 100px; }
+
+.stocklist-details-grid-container {
+  width: 96%;
+  height: 500px;
+  margin-left: 50px; }
+
+.stocklist-filters-container {
+  width: 96%;
+  height: 200px;
+  border: 1px solid grey;
+  margin-top: 20px;
+  margin-left: 47px; }
+
+.watchlist-container {
+  position: relative;
+  top: 100px; }

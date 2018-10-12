@@ -13,6 +13,9 @@ var replace = require('gulp-replace');
 var notify = require('gulp-notify');
 var merge = require('utils-merge');
 var vinylBuffer = require('vinyl-buffer');
+var concat = require('gulp-concat');
+var gulpSass = require('gulp-sass');
+
 
 // gulp.task('scripts', function() {
 //     var source = './source/app.js';
@@ -50,18 +53,19 @@ var vinylBuffer = require('vinyl-buffer');
 // });
 //
 //
-// gulp.task('css', ['svg-sprite'], function () {
-//     return gulp.src(src.css)
-//         .pipe(stylus({
-//             use: nib(),
-//             import: ['nib']
-//         }))
-//         .pipe(concat('main.css'))
-//         .pipe(gulp.dest(build + 'css/'));
-// });
+gulp.task('css', function () {
+    return gulp.src('./source/public/style.scss')
+            .pipe(gulpSass().on('error', gulpSass.logError))
+        // .pipe(stylus({
+        //     use: nib(),
+        //     import: ['nib']
+        // }))
+        .pipe(concat('main.css'))
+        .pipe(gulp.dest('output/css/'));
+});
 
 gulp.task('lint', function() {
-    return gulp.src('./source/public/main/**/*.js')
+    return gulp.src('./source/public/**/*.js')
         .pipe(eslint({
             configFile: 'eslint.json'
         }))
@@ -124,4 +128,4 @@ function bundle(bundler) {
         }));
 }
 
-gulp.task('default', ['scripts-dev', 'html-dev']);
+gulp.task('default', ['scripts-dev','html-dev', 'css']);

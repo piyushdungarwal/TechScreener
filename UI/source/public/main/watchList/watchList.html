@@ -1,0 +1,28 @@
+<div class="watchlist-container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Company Name</th>
+                <th>City</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="x in vm.mylist">
+                <th scope="row">3</th>
+                <td>{{ x.company }}</td>
+                <td>{{ x.city }}</td>
+                <td>{{ x.price }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+    <br />
+    <button class="btn btn-primary" ng-click="vm.addnewEntry()">Add new</button>
+    <div id="addNewDiv" class="col-sm-10">
+
+    </div>
+
+</div>
